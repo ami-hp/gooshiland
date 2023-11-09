@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /panel_admin/
+Sitemap: https://domain.com/sitemap.xml
+

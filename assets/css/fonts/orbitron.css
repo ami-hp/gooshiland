@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-Regular.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Regular.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-Medium.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Medium.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-SemiBold.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-SemiBold.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-Bold.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Bold.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-ExtraBold.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-ExtraBold.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../../fonts/orbitron/Orbitron-Black.woff') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Black.woff2') format('woff'),
+    url('../../fonts/orbitron/Orbitron-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.font-orbitron{
+    font-family: 'orbitron', 'iranyekan-eng', Tahoma, serif;
+}

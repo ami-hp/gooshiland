@@ -1,0 +1,324 @@
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar:hover {
+    opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-main);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+
+}
+
+.scroll-trans::-webkit-scrollbar {
+    width: 1px;
+}
+
+.scroll-trans::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-trans::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.scroll-trans::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+img, button, a {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number],input[type=search] {
+    -moz-appearance: textfield;
+}
+/*plus and minus start*/
+
+
+.minus, .plus{
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+/*brand slider index end*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+/*background: var(--color-overblack-mid);*/
+    color:#fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* Chrome, Safari, Edge, Opera */
+
+.si{
+  color:yellow;
+}
+
+/*product image GALLERY START*/
+
+.-fx-image-gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* arbitrary valye */
+    margin: 0px auto;
+}
+
+.-fx-gal-item {
+    width: 25%; /* for 3 columns */
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.-fx-gal-image-thumb img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: opacity(40%);
+}
+
+.-fx-gal-image-thumb:hover img {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    filter: opacity(100%);
+}
+.-fx-gal-image-thumb:focus{
+    outline: 0!important;
+    border: 0!important;
+}
+
+.-fx-gal-image-thumb:focus + .-fx-gal-image-big {
+    display: block;
+
+
+
+}
+
+.-fx-gal-image-big {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 10, 15, 0.8);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.-fx-gal-image-big img {
+    max-width: 45%;
+    position: absolute;
+    box-shadow: 0 0 800px 40px rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*product image GALLERY END*/
+
+/*custom radio START*/
+
+.radioBox {
+    width: max-content;
+    color: white;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size:14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.myRadio {
+    position: absolute;
+    top:50%;
+    right: 0;
+    height: 13px;
+    width: 13px;
+    background-color: transparent!important;
+    border-radius: 50%;
+    border: 1px solid var(--color-emp-yellow);
+    transform: translate(0, -50%);
+}
+
+/* On mouse-over, add a grey background color */
+.radioBox:hover input ~ .myRadio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioBox input:checked ~ .myRadio {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.myRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBox input:checked ~ .myRadio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioBox .myRadio:after {
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--bg-gold);
+}
+
+/*custom radio END*/
+
+
+/*calendar START*/
+.pdp-default {
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 70px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 3px;
+    position: absolute;
+    border: 1px solid rgb(53,56,65);
+    border-radius: 5px;
+    z-index: 9000000000000000;
+    color:white;
+
+}
+
+.pdp-default .today{
+    color: var(--color-emp-yellow) !important;
+    background: transparent;
+    font-weight: 600;
+}
+.pdp-default .nul{
+    width: 14.2%!important;
+    background-color: var(--color-emp-gray-500)!important;
+    border: 0!important;
+}
+.pdp-default .day {
+    width: 14.2% !important;
+    height: 29px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    background-color: var(--color-emp-gray-500)!important;
+    border: 1px solid var(--color-emp-gray-500);
+    color: white;
+}
+.pdp-default .days{
+    border:unset!important;
+    font: inherit!important;
+    background-color: var(--color-emp-gray-500)!important;
+
+}
+.pdp-default .selday{
+    border: 1px solid var(--bg-gold) !important;
+}
+.pdp-default .dows{
+    background-color: var(--color-emp-gray-500)!important;
+}
+.pdp-default .dow {
+    font: inherit!important;
+    width: 14.2% !important;
+    border: unset!important;
+    color: white!important;
+}
+.pdp-footer{
+    display: none;
+}
+.pdp-default .pdp-header {
+    padding: 5px !important;
+    height: 30px !important;
+    border-top: unset !important;
+    border-left: unset !important;
+    border-right: unset !important;
+    background-color: var(--color-emp-gray-500);
+}
+.pdp-default .friday{
+    color:red!important;
+}
+.pdp-default .disday{
+    color:var(--color-emp-gray-300)!important;
+}
+.pdp-default .nextArrow, .pdp-default .prevArrow{
+    top:8px!important;
+}
+/*calendar START*/
+
+/*turbolinks*/
+html.turbolinks-progress-bar::before {
+    background-color: var(--color-emp-yellow) !important;
+    height: 5px !important;
+}
+/*turbolinks*/
